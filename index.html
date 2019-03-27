@@ -1,6 +1,16 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-102579625-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-102579625-2');
+</script>
+
     <title>sameAs.cc</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -68,7 +78,7 @@
       <div class="container">
         <div class="row mb-4">
           <h5>This Web service provides access to the largest collection of owl:sameAs statements and their equivalence classes after transitive closure. These statements are extracted from the 2015 LOD Laundromat crawl of the Web of Data. </h5></br>
-          <h7>If you are using our service/data for your research, you can contact us if you wish your work to be added as a use case on this page.</h7>
+          <h7>If you are using our service/data for your research, contact us if you wish your work to be added as a use case on this page.</h7>
         </div>
         <div class="row blog-entries">
           <div class="col-md-12 col-lg-8 main-content">
@@ -94,7 +104,7 @@
                         <span class="mr-2">June 3, 2018 </span>
                       </div>
                       <h2>Download all 48.9 million equivalence classes after transitive closure</h2>
-                      <h7>Each row in this file represents an equivalence class (3.76GB file). The first column contains the ID of the class, and each other column represents one RDF term in this class, representing the implictly identical terms</h7>
+                      <h7>Each row in this file represents an equivalence class (3.76GB file). The first column contains the ID of the class, and each other column contains one RDF term in this class, representing the implictly identical terms</h7>
                     </span>
                 </div>
                 <div class="post-entry-horzontal">
@@ -105,7 +115,7 @@
                         <span class="mr-2">June 3, 2018 </span>
                       </div>
                       <h2>Browse schema assertions about owl:sameAs</h2>
-                      <h7>There are 2,773 assertions about owl:sameAs extracted from the LOD Cloud that extend the schema as defined in the OWL vocabulary in interesting ways</h7>
+                      <h7>There are 2,773 assertions about owl:sameAs extracted from the LOD Cloud that extend the schema as defined in the OWL vocabulary in "interesting" ways</h7>
                     </span>
                 </div>
                 <div class="post-entry-horzontal">
@@ -116,7 +126,8 @@
                         <span class="mr-2">October 8, 2018 </span>
                       </div>
                       <h2>Download the error degree of each owl:sameAs statement</h2>
-                      <h7>An error degree between 0 and 1 for each owl:sameAs statement is computed based on the community structure of the sameAs network <a href="https://www.cs.vu.nl/~frankh/postscript/ISWC2018.pdf">[Raad et al., 2018]</a></h7>
+                      <h7>An error degree between 0 and 1 is computed for each owl:sameAs statement based on the community structure of the sameAs network <a href="https://www.cs.vu.nl/~frankh/postscript/ISWC2018.pdf">(approach)</a>.
+                        Each row in this TSV file (3.8 GB) represents one sameAs statement, with the following seven columns: term1 | term2 | error degree | weight (2 if symmetric link, 1 if not) | equivalence class ID | number of sameAs between the terms in this equivalence class | community(ies) ID(s) in which these terms belong.</h7>
                     </span>
                 </div>
               </div>
