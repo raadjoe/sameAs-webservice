@@ -1071,6 +1071,7 @@ textarea.form-control {
 
 .sidebar {
   padding-left: 5em;
+  padding-top: 2em;
 }
 
 @media (max-width: 991.98px) {
